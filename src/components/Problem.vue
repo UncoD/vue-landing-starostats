@@ -5,18 +5,18 @@
       <div class="problems-container">
         <div class="problem-block right">
           <p class="problem-text">Постоянно переписываете список студентов группы?</p>
-          <img class="problem-image" src="../assets/problem.png">
+          <img class="problem-image" src="../assets/students.jpg">
         </div>
         <div class="problem-block left">
-          <img class="problem-image " src="../assets/problem.png">
+          <img class="problem-image" src="../assets/lessons.jpg">
           <p class="problem-text">Каждый день заполняете список прошедших пар?</p>
         </div>
         <div class="problem-block right">
           <p class="problem-text">Вручную подсчитываете количество пропусков за несколько недель учебы?</p>
-          <img class="problem-image" src="../assets/problem.png">
+          <img class="problem-image" src="../assets/homework.jpg">
         </div>
         <div class="problem-block left">
-          <img class="problem-image" src="../assets/problem.png">
+          <img class="problem-image" src="../assets/paper.png">
           <p class="problem-text">Ходите в деканат, чтобы передать данные о пропусках?</p>
         </div>
     </div>
@@ -34,14 +34,10 @@ export default {
 .problem {
   background: #2a2447af;
   color: #dff9ff;
-  min-height: 100vh;
-  padding-bottom: 60px;
-
-  h1 {
-    padding-top: 60px;
-  }
+  height: 100vh;
 }
 .problems-container {
+  font-size: 30px;
   margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -54,6 +50,7 @@ export default {
     .problem-image {
       width: 200px;
       height: 200px;
+      border-radius: 50%;
     }
     .problem-text {
       flex: 1;

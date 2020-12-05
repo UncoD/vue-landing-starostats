@@ -41,18 +41,13 @@ export default {
 .contact {
   background: #2a244739;
   color: #111f3b;
-  min-height: 100vh;
-  padding-bottom: 30px;
-
-  h1 {
-    padding-top: 60px;
-  }
+  height: 100vh;
 }
 sup {
   color: red;
 }
 .order-form {
-  margin-top: 60px;
+  margin-top: 20px;
 
   .block-2 {
     margin-top: 20px;
@@ -69,7 +64,9 @@ sup {
       margin-top: 10px;
       border-radius: 5px;
       padding: 0 10px;
-      font-size: 20px;
+      font-size: 30px;
+      font-family: 'Amatic SC';
+      font-weight: bold;
     }
   }
 

@@ -34,15 +34,13 @@ export default {
 .advantages {
   background: #2a24475e;
   color: #1c2f54;
-  min-height: 100vh;
-  padding-bottom: 60px;
-
+  height: 100vh;
   h1 {
-    padding-top: 60px;
+    margin-top: 30px;
   }
 }
 .advantages-container {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 
@@ -74,7 +72,7 @@ export default {
     p {
       height: 200px;
       width: 195px;
-      font-size: 30px;
+      font-size: 40px;
     }
   }
 }

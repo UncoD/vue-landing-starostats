@@ -24,7 +24,7 @@ export default {
   color: #bac2e7;
   background: #2a2447;
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 }
 .name {
   font-size: 190px;

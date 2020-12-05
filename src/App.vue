@@ -34,6 +34,9 @@ body {
 p, h1 {
   margin: 0;
 }
+h1 {
+  font-size: 60px;
+}
 #app {
   font-family: 'Amatic SC';
   font-size: 24px;

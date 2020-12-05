@@ -1,13 +1,13 @@
+/* amatic-sc-700 - cyrillic */
 @font-face {
   font-family: 'Amatic SC';
-  src: url('amatic_sc.eot');
-  src: url('amatic_sc.eot?#iefix') format('embedded-opentype'),
-       url('amatic_sc.woff2') format('woff2'),
-       url('amatic_sc.woff') format('woff'),
-       url('amatic_sc.ttf') format('truetype'),
-       url('amatic_sc.svg#amatic_scregular') format('svg'),
-       url('amatic_sc.ttf') format('ttf');
-  font-weight: normal;
   font-style: normal;
-
+  font-weight: 700;
+  src: url('amatic-sc-v15-cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('amatic-sc-v15-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('amatic-sc-v15-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('amatic-sc-v15-cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('amatic-sc-v15-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('amatic-sc-v15-cyrillic-700.svg#AmaticSC') format('svg'); /* Legacy iOS */
 }

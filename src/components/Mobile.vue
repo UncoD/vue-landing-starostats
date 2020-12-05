@@ -1,13 +1,13 @@
 <template>
   <div class="mobile">
-    <p class="test-text">Испробуй уже сейчас!</p>
+    <p class="test-text">Попробуй уже сейчас!</p>
     <p class="test-text-br">(можно потыкать,<br>но чуть-чуть)</p>
     <img src="../assets/smartphone.png">
     <button
       v-show="isAtt || isRep || isSch || isStu"
       class="btn-back"
       @click="returnMenu"
-    >&#9668;</button>
+    ><!--&#9668;--></button>
     <div
       v-show="!(isAtt || isRep || isSch || isStu)"
       class="inner-mobile menu"
@@ -24,25 +24,29 @@
       v-show="isAtt"
       class="inner-mobile attendance"
     >
-      <p class="name">Посещаемость</p>
+      <!--<p class="name">Посещаемость</p>-->
+      <img class="logo" alt="UncoD" src="../assets/examples/AttendanceList.png">
     </div>
     <div
       v-show="isRep"
       class="inner-mobile report"
     >
-      <p class="name">Отчет</p>
+      <!--<p class="name">Отчет</p>-->
+      <img class="logo" alt="UncoD" src="../assets/examples/Report.png">
     </div>
     <div
       v-show="isSch"
       class="inner-mobile schedule"
     >
-      <p class="name">Расписание</p>
+      <!--<p class="name">Расписание</p>-->
+      <img class="logo" alt="UncoD" src="../assets/examples/Schedule.png">
     </div>
     <div
       v-show="isStu"
       class="inner-mobile students"
     >
-      <p class="name">Список студентов</p>
+      <!--<p class="name">Список студентов</p>-->
+      <img class="logo" alt="UncoD" src="../assets/examples/StudentsList.png">
     </div>
   </div>
 </template>
@@ -88,6 +92,10 @@ export default {
 <style lang="scss" scoped>
 .mobile {
   position: relative;
+  padding-bottom: 60px;
+  img {
+    max-width: 100%;
+  }
 }
 .test-text {
   position: absolute;
@@ -105,16 +113,28 @@ export default {
 }
 .btn-back {
   position: absolute;
-  right: 30px;
-  top: 80px;
-  width: 30px;
-  height: 30px;
+  right: 34px;
+  top: 104px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   cursor: pointer;
-  background: #003580;
-  color: #d0ff00;
+  /*background: #003580;
+  color: #d0ff00;*/
+  background: transparent;
+  border: 3px dashed #17AB13;
   z-index: 1;
   outline: none;
+  animation: spin 5s linear infinite;;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 .inner-mobile {
   width: 270px;
@@ -123,6 +143,7 @@ export default {
   top: 65px;
   left: 18px;
   color: black;
+  overflow: hidden;
 
   .name {
     margin-top: 60px;
@@ -141,8 +162,9 @@ export default {
       text-transform: uppercase;
       outline: none;
       border-radius: 5px;
-      border-color: #BFBFBF;
-      font-size: 15px;
+      border: 1px solid #BFBFBF;
+      font-size: 24px;
+      font-family: 'Amatic SC', cursive;
       cursor: pointer;
 
       &.attendance {

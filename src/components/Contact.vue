@@ -1,31 +1,33 @@
 <template>
   <div class="contact">
-    <h1>Свяжитесь с нами</h1>
-    <form action="" class="order-form">
-      <div class="block-1">
-        <label class="field">
-          <div>Имя<sup>*</sup></div>
-          <input type="text">
-        </label>
-        <label class="field">
-          <div>Фамилия<sup>*</sup></div>
-          <input type="text">
-        </label>
-      </div>
-      <div class="block-2">
-        <label class="field">
-          <div>Email<sup>*</sup></div>
-          <input type="text">
-        </label>
-        <label class="field">
-          <div>Номер телефона</div>
-          <input type="text">
-        </label>
-      </div>
-      <button type="button" class="order">
-        Заказать прямо сейчас!
-      </button>
-    </form>
+    <div class="container">
+      <h1>Свяжитесь с нами</h1>
+      <form action="" class="order-form">
+        <div class="block-1">
+          <label class="field">
+            <div>Имя<sup>*</sup></div>
+            <input type="text">
+          </label>
+          <label class="field">
+            <div>Фамилия<sup>*</sup></div>
+            <input type="text">
+          </label>
+        </div>
+        <div class="block-2">
+          <label class="field">
+            <div>Email<sup>*</sup></div>
+            <input type="text">
+          </label>
+          <label class="field">
+            <div>Номер телефона</div>
+            <input type="text">
+          </label>
+        </div>
+        <button type="button" class="order">
+          Заказать прямо сейчас!
+        </button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -40,6 +42,7 @@ export default {
   background: #2a244739;
   color: #111f3b;
   min-height: 100vh;
+  padding-bottom: 30px;
 
   h1 {
     padding-top: 60px;
@@ -74,9 +77,13 @@ sup {
     margin-top: 40px;
     height: 60px;
     width: 300px;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 5px;
     cursor: pointer;
+    background: #DB4437;
+    outline: none;
+    border: 1ps solid #BFBFBF;
+    font-family: 'Amatic SC', cursive;
   }
 }
 </style>

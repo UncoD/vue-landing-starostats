@@ -73,6 +73,7 @@ export default {
       margin: 30px 0;
       padding: 15px;
       cursor: default;
+      transition: 0.3s;
 
       &:hover {
         transform: scale(1.2);

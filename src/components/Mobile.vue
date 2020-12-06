@@ -147,7 +147,6 @@ export default {
 <style lang="scss" scoped>
 .mobile {
   position: relative;
-  padding-bottom: 60px;
   img {
     max-width: 100%;
   }
@@ -377,6 +376,14 @@ export default {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .test-text {
+    top: 180px;
+    transform: rotate(-90deg);
+    left: -55%;
   }
 }
 </style>

@@ -47,7 +47,7 @@ export default {
     },
     isElemVisible(el) {
       var rect = el.getBoundingClientRect()
-      var elemTop = rect.top - window.innerHeight + 100
+      var elemTop = rect.top - window.innerHeight
       var elemBottom = rect.bottom
       return elemTop < window.innerHeight && elemBottom >= 0
     }

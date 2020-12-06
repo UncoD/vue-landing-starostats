@@ -1,33 +1,31 @@
 <template>
   <div class="contact">
-    <div class="container">
-      <h1>Свяжитесь с нами</h1>
-      <form action="" class="order-form">
-        <div class="block-1">
-          <label class="field">
-            <div>Имя<sup>*</sup></div>
-            <input type="text">
-          </label>
-          <label class="field">
-            <div>Фамилия<sup>*</sup></div>
-            <input type="text">
-          </label>
-        </div>
-        <div class="block-2">
-          <label class="field">
-            <div>Email<sup>*</sup></div>
-            <input type="text">
-          </label>
-          <label class="field">
-            <div>Номер телефона</div>
-            <input type="text">
-          </label>
-        </div>
-        <button type="button" class="order">
-          Заказать прямо сейчас!
-        </button>
-      </form>
-    </div>
+    <h1>Свяжитесь с нами</h1>
+    <form action="" class="order-form">
+      <div class="block-1">
+        <label class="field">
+          <div>Имя<sup>*</sup></div>
+          <input type="text">
+        </label>
+        <label class="field">
+          <div>Фамилия<sup>*</sup></div>
+          <input type="text">
+        </label>
+      </div>
+      <div class="block-2">
+        <label class="field">
+          <div>Email<sup>*</sup></div>
+          <input type="text">
+        </label>
+        <label class="field">
+          <div>Номер телефона</div>
+          <input type="text">
+        </label>
+      </div>
+      <button type="button" class="order">
+        Заказать прямо сейчас!
+      </button>
+    </form>
   </div>
 </template>
 
@@ -41,7 +39,12 @@ export default {
 .contact {
   background: #2a244739;
   color: #111f3b;
-  height: 100vh;
+  padding: 60px 0;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 sup {
   color: red;

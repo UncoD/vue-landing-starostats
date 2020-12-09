@@ -10,7 +10,7 @@
       <div class="mobile">
         <img class="smart-img" src="../assets/smartphone.png">
         <iframe class="app-video"
-          src="https://www.youtube.com/embed/QEN3l1EPrTE?controls=0&autoplay=1&loop=1">
+          src="https://www.youtube.com/embed/dznzWqUwwx4?autoplay=1&showinfo=0&controls=0">
         </iframe>
       </div>
       <div class="right-block">
@@ -47,6 +47,7 @@ export default {
   .mobile {
     margin: 0 50px;
     position: relative;
+    overflow: hidden;
 
     .smart-img {
       width: 300px;
@@ -58,10 +59,11 @@ export default {
       position: absolute;
       left: 0;
       top: 0;
-      width: 278px;
-      height: 462px;
-      top: 68px;
-      left: 12px;
+      width: 1920px;
+      height: 463px;
+      top: 67px;
+      left: 50%;
+      transform: translate(-50%, 0px);
       border: none;
     }
   }
